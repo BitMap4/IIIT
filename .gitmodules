@@ -1,0 +1,24 @@
+[submodule "2-1/OSN/cs3301_osn"]
+	path = 2-1/OSN/cs3301_osn
+	url = https://github.com/bitmap4/cs3301_osn
+[submodule "1-2/ISS/iss-lab-2-BitMap4"]
+	path = 1-2/ISS/iss-lab-2-BitMap4
+	url = https://github.com/Introduction-to-Software-Systems/iss-lab-2-BitMap4.git
+[submodule "1-2/ISS/iss-lab-3-BitMap4"]
+	path = 1-2/ISS/iss-lab-3-BitMap4
+	url = https://github.com/Introduction-to-Software-Systems/iss-lab-3-BitMap4.git
+[submodule "1-2/ISS/prjct/course-project-odomos"]
+	path = 1-2/ISS/prjct/course-project-odomos
+	url = https://github.com/Introduction-to-Software-Systems/course-project-odomos.git
+[submodule "1-2/ISS/projetemp/course-project-odomos"]
+	path = 1-2/ISS/projetemp/course-project-odomos
+	url = https://github.com/Introduction-to-Software-Systems/course-project-odomos.git
+[submodule "2-1/AT/lsystems"]
+	path = 2-1/AT/lsystems
+	url = https://github.com/arendsee/lsystems.git
+[submodule "2-1/AT/programming_assignment/q2.old/lsystems"]
+	path = 2-1/AT/programming_assignment/q2.old/lsystems
+	url = https://github.com/arendsee/lsystems.git
+[submodule "2-1/OSN/riscv-gnu-toolchain"]
+	path = 2-1/OSN/riscv-gnu-toolchain
+	url = https://github.com/riscv-collab/riscv-gnu-toolchain

@@ -1,5 +1,4 @@
-riscv-gnu-toolchain/
 __pycache__/
 .stack-work/
 .env
-cs3301_osn/
+node_modules/
