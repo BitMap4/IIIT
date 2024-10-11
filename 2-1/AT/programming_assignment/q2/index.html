@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px 0;
+            background-color: #40534C;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #D6BD98;
+        }
+        canvas {
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+            display: none;
+            background: #ECDFCC;
+            border-radius: 5px;
+            margin: 20px 20px 0 0;
+        }
+        #anything {
+            display: block;
+        }
+        #anything > canvas {
+            display: inline-block;
+        }
+        .canvas-container {
+            display: block;
+            margin: 20px;
+        }
+        .canvas-label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas-container">
+        <label class="canvas-label" for="mirrorball">Mirrorball (12 iterations) (show/hide)</label>
+        <canvas id="mirrorball" width="800" height="800"></canvas>
+    </div>
+    <div class="canvas-container">
+        <label class="canvas-label" for="tree">Tree (4 iterations) (show/hide)</label>
+        <canvas id="tree" width="800" height="800"></canvas>
+    </div>
+    <div class="canvas-container">
+        <label class="canvas-label" for="anything">Anything (6 iterations) (show/hide)</label>
+        <div id="anything">
+            <canvas id="anything1" width="800" height="800"></canvas> 
+            <canvas id="anything2" width="800" height="800"></canvas>
+            <canvas id="anything3" width="800" height="800"></canvas>
+            <canvas id="anything4" width="800" height="800"></canvas>
+            <canvas id="anything5" width="800" height="800"></canvas>
+        </div>
+    </div>
+    <div class="canvas-container">
+        <label class="canvas-label" for="noise">Noise (9 iterations) (show/hide)</label>
+        <canvas id="noise" width="800" height="800"></canvas>
+    </div>
+    <script src="https://github.com/nylki/lindenmayer/releases/download/15.3/lindenmayer.browser.js"></script>
+    <script>
+        const F = (system, ctx) => {
+            ctx.beginPath()
+            ctx.moveTo(0, 0)
+            ctx.lineTo(0, -40/(system.iterations + 1))
+            ctx.stroke()
+            ctx.translate(0, -40/(system.iterations + 1))
+        }
+        const G = (system, ctx) => {
+            ctx.beginPath()
+            ctx.moveTo(0,0)
+            ctx.lineTo(0, -40/(system.iterations + 1))
+            ctx.translate(0, -40/(system.iterations + 1))
+        }
+
+        document.querySelectorAll('.canvas-label').forEach(label => {
+            label.addEventListener('click', () => {
+                const canvas = document.getElementById(label.htmlFor);
+                if (canvas.style.display === 'none' || canvas.style.display === '') {
+                    canvas.style.display = 'block';
+                } else {
+                    canvas.style.display = 'none';
+                }
+            })
+        })
+    </script>
+    <script src="mirrorball.js"></script>
+    <script src="tree.js"></script>
+    <script src="anything.js"></script>
+    <script src="noise.js"></script>
+</body>
+</html>

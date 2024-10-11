@@ -1,0 +1,48 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.37.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           q2
+version:        0.1.0.0
+build-type:     Simple
+
+executable anything
+  main-is: anything.hs
+  other-modules:
+      Paths_q2
+  hs-source-dirs:
+      ./
+  build-depends:
+      base
+    , lsystem
+    , process
+    , random
+  default-language: Haskell2010
+
+executable mirrorball
+  main-is: mirrorball.hs
+  other-modules:
+      Paths_q2
+  hs-source-dirs:
+      ./
+  build-depends:
+      base
+    , lsystem
+    , process
+    , random
+  default-language: Haskell2010
+
+executable tree
+  main-is: tree.hs
+  other-modules:
+      Paths_q2
+  hs-source-dirs:
+      ./
+  build-depends:
+      base
+    , lsystem
+    , process
+    , random
+  default-language: Haskell2010

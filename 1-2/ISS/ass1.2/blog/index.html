@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+    <link rel="stylesheet" text="text/css" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet">
+    <style>
+        body{
+            display: block;
+        }
+        #container {
+            margin: 0;
+            width: 100%;
+        }
+        #header {
+            left: 0;
+        }
+        #blogs {
+            display: block;
+            width: 100%;
+        }
+        .blog-container {
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            width: 80%;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #000000;
+            position: relative;
+            cursor: pointer;
+        }
+        .blog-container h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .blog-container #preview {
+            font-size: 18px;
+            margin: 0;
+        }
+        .blog-container #likes {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header" class="not-navbar" style="position:fixed">
+            <img src="../abhyudit.jpg" id="pfp">
+            <div id="navbar">
+                <h1 id="name">ABHYUDIT SINGH</h1>
+                <div id="theme-connections">
+                    <div id="theme-toggle">
+                        <span id="current">🌙</span>
+                    </div>
+                    <div id="connections">
+                        <a href="https://www.linkedin.com/in/abhyudit-singh-07aaba265/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                        <a href="https://instagram.com/_abhyudit_" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/BitMap4" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="mailto:abhyudit.singh@research.iiit.ac.in" target="_blank"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="pages">
+                <div id="dropdown">Pages<i clas="fa fa-arrow-arrow"></i></div>
+                <div id="dropdown-items">
+                    <a href="index.html">Home</a>
+                    <a href="#" onclick="execute('about')">About</a>
+                    <a href="#" onclick="execute('education')">Education</a>
+                    <a href="#" onclick="execute('achievements')">Achievements</a>
+                    <a href="#" onclick="execute('skills')">Skills</a>
+                    <a href="#" href="index.html">Blog</a>
+                </div>
+            </div>
+        </div>
+        <div id="blogs">
+            <div class="blog-container">
+                <h1>How to increase height</h1>
+                <div id="preview">Lorem ipsum dolor sit amet, consectetur </div>
+                <div class="likes"><a><i class="fa fa-thumbs-up"></i></a> <a id="likes-1">0</a></div>
+            </div>
+            <div class="blog-container">
+                <h1>How to increase height</h1>
+                <div id="preview">Lorem ipsum dolor sit amet, consectetur </div>
+                <div class="likes"><a><i class="fa fa-thumbs-up"></i></a> <a id="likes-2">0</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js">transformHeader()</script>
+    <script>
+        var liked = JSON.parse(localStorage.getItem('liked'));
+        if (liked == null) liked = {};
+        if (liked[1] !== undefined && liked[1] != 0) liked[1] = 1;
+        if (liked[2] !== undefined && liked[2] != 0) liked[2] = 1;
+        if (liked[1] == 1) {
+            document.getElementsByClassName('fa-thumbs-up')[0].style.color = 'blue';
+        } else {
+            document.getElementsByClassName('fa-thumbs-up')[0].style.color = 'var(--text)';
+        }
+        if (liked[2] == 1) {
+            document.getElementsByClassName('fa-thumbs-up')[1].style.color = 'blue';
+        } else {
+            document.getElementsByClassName('fa-thumbs-up')[1].style.color = 'var(--text)';
+        }
+        var likes = JSON.parse(localStorage.getItem('likes'));
+        if (likes == null) likes = {};
+        if (likes[1] == null) likes[1] = 0;
+        if (likes[2] == null) likes[2] = 0;
+        document.getElementById('likes-1').innerHTML = likes[1];
+        document.getElementById('likes-2').innerHTML = likes[2];
+        // add event listeners to like buttons
+        document.getElementsByClassName('fa-thumbs-up')[0].addEventListener('click', function() {
+            if (!liked[1]) {
+                likes[1]++;
+                liked[1] = 1;
+                document.getElementsByClassName('fa-thumbs-up')[0].style.color = 'blue';
+            }
+            else {
+                likes[1]--;
+                liked[1] = 0;
+                document.getElementsByClassName('fa-thumbs-up')[0].style.color = 'var(--text)';
+            }
+            document.getElementById('likes-1').innerHTML = likes[1];
+            localStorage.setItem('likes', JSON.stringify(likes));
+
+        });
+        document.getElementsByClassName('fa-thumbs-up')[1].addEventListener('click', function() {
+            console.log('clicked');
+            if (!liked[2]) {
+                likes[2]++;
+                liked[2] = 1;
+                document.getElementsByClassName('fa-thumbs-up')[1].style.color = 'blue';
+            }
+            else {
+                likes[2]--;
+                liked[2] = 0;
+                document.getElementsByClassName('fa-thumbs-up')[1].style.color = 'var(--text)';
+            }
+            document.getElementById('likes-2').innerHTML = likes[2];
+            localStorage.setItem('likes', JSON.stringify(likes));
+        });
+        window.onbeforeunload = function() {
+            localStorage.setItem('liked', JSON.stringify(liked));
+            localStorage.setItem('likes', JSON.stringify(likes));
+        }
+
+        document.getElementsByClassName('blog-container')[0].addEventListener('click', function() {
+            window.location.href = 'posts/1.html';
+        });
+        document.getElementsByClassName('blog-container')[1].addEventListener('click', function() {
+            window.location.href = 'posts/2.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+/*
+
+Sample I/O
+
+Input                       Output
+-----                       ------
+create_platform
+add_post user1 caption1
+add_post user2 caption2
+add_post user3 caption3
+delete_post 2
+view_post 2                 user1 caption1
+add_post user4 caption4
+current_post                user1 caption1
+previous_post               user3 caption3
+previous_post               user4 caption4
+next_post                   user3 caption3
+add_comment user1 content1
+add_comment user2 content2
+view_comments               user1 content1
+                            user2 content2
+delete_comment 2
+view_comments               user2 content2
+current_post                user3 caption3
+add_comment user3 content3
+add_reply user1 reply1 2
+add_reply user2 reply2 2
+view_comments               user2 content2
+                            user1 reply1
+                            user2 reply2
+                            user3 content3
+delete_reply 2 1
+view_comments               user2 content2
+                            user1 reply1
+                            user3 content3
+
+*/

@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "getcmd.h": "c",
+        "runcmd.h": "c",
+        "tokens.h": "c",
+        "commands.h": "c",
+        "log.h": "c",
+        "atomic": "c",
+        "hop.h": "c",
+        "wait.h": "c",
+        "panic.h": "c",
+        "fork1.h": "c",
+        "jobs.h": "c"
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+    <link rel="stylesheet" text="text/css" href="../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet">
+    <style>
+        body{
+            display: block;
+        }
+        #container {
+            margin: 0;
+            padding: 20px;
+            align-items: start;
+        }
+        #header {
+            left: 0;
+        }
+        .blog-container, #comments {
+            display: block;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 200px;
+            margin: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .blog-container h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .blog-container #preview {
+            font-size: 18px;
+            margin: 0;
+        }
+        .blog-container #likes {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            cursor: pointer;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid var(--text);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header" class="not-navbar" style="position:fixed">
+            <img src="../../abhyudit.jpg" id="pfp">
+            <div id="navbar">
+                <h1 id="name">ABHYUDIT SINGH</h1>
+                <div id="theme-connections">
+                    <div id="theme-toggle">
+                        <span id="current">🌙</span>
+                    </div>
+                    <div id="connections">
+                        <a href="https://www.linkedin.com/in/abhyudit-singh-07aaba265/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                        <a href="https://instagram.com/_abhyudit_" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/BitMap4" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="mailto:abhyudit.singh@research.iiit.ac.in" target="_blank"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="pages">
+                <div id="dropdown">Pages<i clas="fa fa-arrow-arrow"></i></div>
+                <div id="dropdown-items">
+                    <a href="index.html">Home</a>
+                    <a href="#" onclick="execute('about')">About</a>
+                    <a href="#" onclick="execute('education')">Education</a>
+                    <a href="#" onclick="execute('achievements')">Achievements</a>
+                    <a href="#" onclick="execute('skills')">Skills</a>
+                    <a href="/blog/index.html">Blog</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-container">
+            <h1>Blog 1</h1>
+            <div id="preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam distinctio, officiis sit consequatur mollitia ad quia vel temporibus? Eligendi temporibus perferendis rerum illo, magni mollitia porro adipisci doloribus ipsa quam.</div>
+            <div class="likes"><a><i class="fa fa-thumbs-up"></i></a> <a id="likes-1">0</a></div>
+        </div>
+        <div id="comments">
+            <h1>Comments</h1>
+            <input id="addComment" placeholder="Type comment and press submit"></input>
+            <input id="submit" type="submit" value="Submit">
+        </div>
+    </div>
+    <script src="../../script.js">transformHeader()</script>
+    <script>
+        var container = document.getElementById('container');
+        container.style.width = `${window.innerWidth-60}px`;
+        container.style.height = `${window.innerHeight-60}px`;
+
+
+        var liked = JSON.parse(localStorage.getItem('liked'));
+        if (liked == null) liked = {};
+        if (liked[1] !== undefined && liked[1] != 0) liked[1] = 1;
+        if (liked[1] == 1) {
+            document.getElementsByClassName('fa-thumbs-up')[0].style.color = 'blue';
+        } else {
+            document.getElementsByClassName('fa-thumbs-up')[0].style.color = 'var(--text)';
+        }
+        var likes = JSON.parse(localStorage.getItem('likes'));
+        if (likes == null) likes = {};
+        if (likes[1] == null) likes[1] = 0;
+        document.getElementById('likes-1').innerHTML = likes[1];
+        // add event listeners to like buttons
+        document.getElementsByClassName('fa-thumbs-up')[0].addEventListener('click', function() {
+            if (!liked[1]) {
+                likes[1]++;
+                liked[1] = 1;
+                document.getElementsByClassName('fa-thumbs-up')[0].style.color = 'blue';
+            }
+            else {
+                likes[1]--;
+                liked[1] = 0;
+                document.getElementsByClassName('fa-thumbs-up')[0].style.color = 'var(--text)';
+            }
+            document.getElementById('likes-1').innerHTML = likes[1];
+            localStorage.setItem('likes', JSON.stringify(likes));
+
+        });
+        window.onbeforeunload = function() {
+            localStorage.setItem('liked', JSON.stringify(liked));
+        }
+
+        document.getElementById('submit').addEventListener('click', () => {
+            var comment = document.getElementById('addComment').value;
+            var comments = JSON.parse(localStorage.getItem('comments'));
+            if (comments == null) comments = {};
+            if (comments[0] == null) comments[0] = [];
+            comments[0].push(comment);
+            localStorage.setItem('comments', JSON.stringify(comments));
+            document.getElementById('addComment').value = '';
+            addComment(comment);
+            
+        });
+        const addComment = (comment) => {
+            var commentDiv = document.createElement('div');
+            commentDiv.innerHTML = comment;
+            document.getElementById('comments').appendChild(commentDiv);
+        }
+        var comments = JSON.parse(localStorage.getItem('comments'));
+        if (comments == null) comments = {};
+        if (comments[0] == null) comments[0] = [];
+        for (var i = 0; i < comments[0].length; i++) {
+            addComment(comments[0][i]);
+        }
+    </script>
+</body>
+</html>

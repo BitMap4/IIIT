@@ -1,0 +1,23 @@
+name: q2
+version: 0.1.0.0
+# resolver: lts-12.9  # Replace with the appropriate resolver from stack.yaml
+
+dependencies:
+  - base
+  - lsystem 
+  - random
+  - process
+
+executables:
+  mirrorball:
+    main: mirrorball.hs
+    source-dirs: .
+  tree:
+    main: tree.hs
+    source-dirs: .
+  anything:
+    main: anything.hs
+    source-dirs: .
+  # test:
+  #   main: test.hs
+  #   source-dirs: .

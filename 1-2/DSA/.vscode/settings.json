@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "barrier": "c",
+        "chrono": "c",
+        "random": "c",
+        "latch": "c",
+        "limits": "c",
+        "semaphore": "c"
+    }
+}

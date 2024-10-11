@@ -1,0 +1,260 @@
+<!-- a terminal interface website -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>zyrouge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        body {
+            background-color: #ff756d;
+            color: #fff;
+            font-family: monospace;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            /* height: 100%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .terminal {
+            width: 700px;
+            height: 525px;
+            border: 0.1px solid #575757;
+            border-radius: 10px;
+            overflow: hidden;
+            opacity: 0.9;
+            /* blur */
+        }
+        .terminal-header {
+            width: 100%;
+            height: 40px;
+            background-color: #283041;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .terminal-header-button {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+        .pfp {
+            width: 40px;
+            height: 100%;
+            margin: 0 5px;
+        }
+        .pfp img {
+            width: 80%;
+            height: 80%;
+            margin: 3px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .username {
+            color: #fff;
+            margin: 0 5px;
+            display: inline-block;
+            font-size: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .buttons{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: absolute;
+            right: 5px;
+            top: 12.5px;
+        }
+        .red {
+            background-color: #ff5f56;
+        }
+        .yellow {
+            background-color: #ffbd2e;
+        }
+        .green {
+            background-color: #27c93f;
+        }
+        .red:hover {
+            background-color: #dd0f00;
+        }
+        .yellow:hover {
+            background-color: #d8a200;
+        }
+        .green:hover {
+            background-color: #00aa14;
+        }
+        .terminal-body {
+            width: 100%;
+            height: calc(100% - 30px);
+            background-color: #000;
+            /* display: flex; */
+            /* justify-content: flex-start; */
+            align-items: center;
+            padding: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .terminal-body-text {
+            width: 100%;
+            height: 100%;
+            /* display: flex; */
+            justify-content: flex-start;
+        }
+        .terminal-body-text p {
+            margin: 0;
+        }
+        .user {
+            color: #28e403;
+        }
+        .pwd {
+            color: #2eb2ff;
+        }
+        #typed {
+            color: #fff;
+            word-wrap: break-word;
+        }
+        #cursor {
+            background-color: #fff;
+            color: transparent;
+            animation: blink 1s infinite;
+            display: inline-block;
+        }
+        #input{
+            opacity: 0;
+            position: absolute;
+            pointer-events: none;
+            width: 0;
+            overflow: visible;
+            caret-color: transparent;
+        }
+    </style>
+</head>
+<body></body>
+    
+    <input type="text" id="input">
+    <div class="container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="pfp"><img src="abhyudit.jpg"></div>
+                <div class="username">Abhyudit Singh</div>
+                <div class="buttons">
+                    <div class="terminal-header-button red"></div>
+                    <div class="terminal-header-button yellow"></div>
+                    <div class="terminal-header-button green"></div>
+                </div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-body-text">
+                    <p id="input-1">
+                        <span class="user">Abhyudit@IIIT</span>:<span class="pwd">~</span>$ <span id="typed-1"></span><span id="cursor">|</span>
+                    </p>
+                    <p id="output-1">
+                        <span id="output-1"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var count = 1;
+        var terminal  = document.querySelector('.terminal');
+        var terminal_body_text = document.querySelector('.terminal-body-text');
+        var input = document.getElementById('input');
+        var typed = document.getElementById('typed-1');
+        var output = document.getElementById('output-1');
+        var help_output = {
+            'help': 'Available commands: <br>about, contact, skills, projects, clear',
+            'about': 'I am a web developer and a competitive programmer. I am currently pursuing my B.Tech in Computer Science from IIIT Gwalior.',
+            'contact': 'You can contact me at <br>'}
+        // input.focus();
+        // detect terminal click
+        terminal.addEventListener('click', function() {
+            input.focus();
+        });
+        // blink cursor
+        setInterval(function() {
+            var cursor = document.getElementById('cursor');
+            if (cursor.style.opacity === '1') {
+                cursor.style.opacity = '0';
+            } else {
+                cursor.style.opacity = '1';
+            }
+        }, 500);
+        // detect input
+        input.addEventListener('input', function() {
+            typed.innerHTML = input.value;
+            if (typed.innerHTML in help_output) {
+                typed.style.color = '#f16363';
+            } else {
+                typed.style.color = '#fff';
+            }
+        });
+        // detect enter key
+        input.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                var command = input.value;
+                if (typed.innerHTML === 'clear') {
+                    terminal_body_text.innerHTML = 
+                        '<p id="input-1">\
+                            <span class="user">Abhyudit@IIIT</span>:<span class="pwd">~</span>$ <span id="typed-1"></span>\
+                            <span id=cursor>|</span>\
+                        </p>\
+                        <p id="output-1">\
+                            <span id="output-1"></span>\
+                        </p>';
+                    input.value = '';
+                    count = 1;
+                    typed = document.getElementById('typed-1');
+                    output = document.getElementById('output-1');
+                    input.focus();
+                    return;
+                } else if (typed.innerHTML === 'help') {
+                    output.innerHTML = help_output['help'];
+                } else if (typed.innerHTML === 'about') {
+                    output.innerHTML = help_output['about'];
+                } else if (typed.innerHTML === 'contact') {
+                    output.innerHTML = help_output['contact'];
+                } else {
+                    output.innerHTML = 'Command not found: ' + typed.innerHTML;
+                }
+                input.value = '';
+                
+                // remove id from typed child
+                document.getElementById('cursor').removeAttribute('id');
+                count++;
+                terminal_body_text.innerHTML += 
+                    '<p id="input-' + count + '">\
+                        <span class="user">Abhyudit@IIIT</span>:<span class="pwd">~</span>$ <span id="typed-' + count + '"></span>\
+                        <span id=cursor>|</span>\
+                    </p>\
+                    <p id="output-' + count + '">\
+                        <span id="output-' + count + '"></span>\
+                    </p>';
+                typed = document.getElementById('typed-' + count);
+                output = document.getElementById('output-' + count);
+                input.focus();
+            }
+        });
+    </script>
+</body>
+</html>

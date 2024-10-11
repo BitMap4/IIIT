@@ -1,0 +1,607 @@
+English:
+1.	be
+• am 
+<root="be",cat="v",tense="present",gnp="1,sg">
+• is 
+<root="be",cat="v",tense="present",gnp="3,sg"> 
+• are 
+<root="be",cat="v",tense="present",gnp="2"> 
+• are 
+<root="be",cat="v",tense="present",gnp="1,pl">
+• was 
+<root="be",cat="v",tense="past", gnp=”1,sg”> 
+• was 
+<root="be",cat="v",tense="past", gnp=”3,sg”>
+• were 
+<root="be",cat="v",tense="past",gnp="2,sg">
+• were 
+<root="be",cat="v",tense="past",gnp="pl"> 
+• been 
+<root="be",cat="v",aspect="participle"> 
+• being 
+<root="be",cat="v",aspect="progress">
+2.	have 
+• have 
+<root="have",cat="v",tense="present",gnp="1"> 
+• has 
+<root="have",cat="v",tense="present",gnp="3,sg"> 
+• have 
+<root="have",cat="v",tense="present",gnp="2">
+• have 
+<root="have",cat="v",tense="present",gnp="3,pl">
+• had 
+<root="have",cat="v",tense="past">
+• had 
+<root="have",cat="v",aspect="participle"> 
+• having 
+<root="have",cat="v",aspect="progress">
+3.	Do
+• do 
+<root=“do”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• does 
+<root=“do”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• do
+<root=“do”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• do 
+<root=“do”,cat=“v”,tense=“present”,gnp=“pl”> 
+• did 
+<root=“do”,cat=“v”,tense=“past”> 
+• done 
+<root=“do”,cat=“v”,aspect=“participle”> 
+• doing 
+<root=“do”,cat=“v”,aspect=“progress”>
+4.	Say
+• say 
+<root=“say”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• says 
+<root=“say”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• say 
+<root=“say”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• say 
+<root=“say”,cat=“v”,tense=“present”,gnp=“pl”> 
+• said 
+<root=“say”,cat=“v”,tense=“past”> 
+• said 
+<root=“say”,cat=“v”,aspect=“participle”> 
+• saying 
+<root=“say”,cat=“v”,aspect=“progress”>
+5.	Go
+• go 
+<root=“go”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• goes 
+<root=“go”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• go 
+<root=“go”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• go 
+<root=“go”,cat=“v”,tense=“present”,gnp=“pl”> 
+• went 
+<root=“go”,cat=“v”,tense=“past”> 
+• gone 
+<root=“go”,cat=“v”,aspect=“participle”> 
+• going 
+<root=“go”,cat=“v”,aspect=“progress”>
+6.	Get
+• get 
+<root=“get”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• gets 
+<root=“get”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• get 
+<root=“get”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• get 
+<root=“get”,cat=“v”,tense=“present”,gnp=“pl”> 
+• got 
+<root=“get”,cat=“v”,tense=“past”> 
+• gotten 
+<root=“get”,cat=“v”,aspect=“participle”> 
+• getting 
+<root=“get”,cat=“v”,aspect=“progress”>
+7.	Make
+• make 
+<root=“make”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• makes 
+<root=“make”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• make 
+<root=“make”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• make 
+<root=“make”,cat=“v”,tense=“present”,gnp=“pl”> 
+• made 
+<root=“make”,cat=“v”,tense=“past”> 
+• made 
+<root=“make”,cat=“v”,aspect=“participle”> 
+• making 
+<root=“make”,cat=“v”,aspect=“progress”>
+8.	Know
+• know 
+<root=“know”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• knows 
+<root=“know”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• know 
+<root=“know”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• know 
+<root=“know”,cat=“v”,tense=“present”,gnp=“pl”> 
+• knew 
+<root=“know”,cat=“v”,tense=“past”> 
+• known 
+<root=“know”,cat=“v”,aspect=“participle”> 
+• knowing 
+<root=“know”,cat=“v”,aspect=“progress”>
+9.	Think
+• think 
+<root=“think”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• thinks 
+<root=“think”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• think 
+<root=“think”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• think 
+<root=“think”,cat=“v”,tense=“present”,gnp=“pl”> 
+• thought 
+<root=“think”,cat=“v”,tense=“past”> 
+• thought 
+<root=“think”,cat=“v”,aspect=“participle”> 
+• thinking 
+<root=“think”,cat=“v”,aspect=“progress”>
+10.	Take
+• take 
+<root=“take”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• takes 
+<root=“take”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• take 
+<root=“take”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• take 
+<root=“take”,cat=“v”,tense=“present”,gnp=“pl”> 
+• took 
+<root=“take”,cat=“v”,tense=“past”> 
+• taken 
+<root=“take”,cat=“v”,aspect=“participle”> 
+• taking 
+<root=“take”,cat=“v”,aspect=“progress”>
+11.	See
+• see 
+<root=“see”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• sees 
+<root=“see”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• see 
+<root=“see”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• see 
+<root=“see”,cat=“v”,tense=“present”,gnp=“pl”> 
+• saw 
+<root=“see”,cat=“v”,tense=“past”> 
+• seen 
+<root=“see”,cat=“v”,aspect=“participle”> 
+• seeing 
+<root=“see”,cat=“v”,aspect=“progress”>
+12.	Come
+• come 
+<root=“come”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• comes 
+<root=“come”,cat=“v”,tense=“present”,gnp=“3,sg”>
+ • come 
+<root=“come”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• come 
+<root=“come”,cat=“v”,tense=“present”,gnp=“pl”> 
+• came 
+<root=“come”,cat=“v”,tense=“past”> 
+• come 
+<root=“come”,cat=“v”,aspect=“participle”> 
+• coming 
+<root=“come”,cat=“v”,aspect=“progress”>
+13.	Want
+• want 
+<root=“want”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• wants 
+<root=“want”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• want 
+<root=“want”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• want 
+<root=“want”,cat=“v”,tense=“present”,gnp=“pl”> 
+• wanted 
+<root=“want”,cat=“v”,tense=“past”> 
+• wanted 
+<root=“want”,cat=“v”,aspect=“participle”> 
+• wanting 
+<root=“want”,cat=“v”,aspect=“progress”>
+14.	Use
+• use 
+<root=“use”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• uses 
+<root=“use”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• use 
+<root=“use”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• use 
+<root=“use”,cat=“v”,tense=“present”,gnp=“pl”> 
+• used 
+<root=“use”,cat=“v”,tense=“past”> 
+• used 
+<root=“use”,cat=“v”,aspect=“participle”> 
+• using 
+<root=“use”,cat=“v”,aspect=“progress”>
+15.	Find
+• find 
+<root=“find”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• finds 
+<root=“find”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• find 
+<root=“find”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• find 
+<root=“find”,cat=“v”,tense=“present”,gnp=“pl”> 
+• found 
+<root=“find”,cat=“v”,tense=“past”> 
+• found 
+<root=“find”,cat=“v”,aspect=“participle”> 
+• finding 
+<root=“find”,cat=“v”,aspect=“progress”>
+16.	Give
+• give 
+<root=“give”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• gives 
+<root=“give”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• give 
+<root=“give”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• give 
+<root=“give”,cat=“v”,tense=“present”,gnp=“pl”> 
+• gave 
+<root=“give”,cat=“v”,tense=“past”> 
+• given 
+<root=“give”,cat=“v”,aspect=“participle”> 
+• giving 
+<root=“give”,cat=“v”,aspect=“progress”>
+17.	Tell
+• tell 
+<root=“tell”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• tells 
+<root=“tell”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• tell 
+<root=“tell”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• tell 
+<root=“tell”,cat=“v”,tense=“present”,gnp=“pl”> 
+• told 
+<root=“tell”,cat=“v”,tense=“past”>
+• told 
+<root=“tell”,cat=“v”,aspect=“participle”> 
+• telling 
+<root=“tell”,cat=“v”,aspect=“progress”>
+18.	Try
+• try 
+<root=“try”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• tries 
+<root=“try”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• try 
+<root=“try”,cat=“v”,tense=“present”,gnp=“2,sg”>
+• try 
+<root=“try”,cat=“v”,tense=“present”,gnp=“pl”> 
+• tried 
+<root=“try”,cat=“v”,tense=“past”> 
+• tried 
+<root=“try”,cat=“v”,aspect=“participle”> 
+• trying 
+<root=“try”,cat=“v”,aspect=“progress”>
+19.	Feel
+• feel 
+<root=“feel”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• feels 
+<root=“feel”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• feel 
+<root=“feel”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• feel 
+<root=“feel”,cat=“v”,tense=“present”,gnp=“pl”> 
+• felt 
+<root=“feel”,cat=“v”,tense=“past”> 
+• felt 
+<root=“feel”,cat=“v”,aspect=“participle”> 
+• feeling 
+<root=“feel”,cat=“v”,aspect=“progress”>
+20.	Leave
+• leave 
+<root=“leave”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• leaves 
+<root=“leave”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• leave 
+<root=“leave”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• leave 
+<root=“leave”,cat=“v”,tense=“present”,gnp=“pl”> 
+• left 
+<root=“leave”,cat=“v”,tense=“past”> 
+• left 
+<root=“leave”,cat=“v”,aspect=“participle”> 
+• leaving 
+<root=“leave”,cat=“v”,aspect=“progress”>
+21.	Put
+• put 
+<root=“put”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• puts 
+<root=“put”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• put 
+<root=“put”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• put 
+<root=“put”,cat=“v”,tense=“present”,gnp=“pl”> 
+• put 
+<root=“put”,cat=“v”,tense=“past”> 
+• put 
+<root=“put”,cat=“v”,aspect=“participle”> 
+• putting 
+<root=“put”,cat=“v”,aspect=“progress”>
+22.	Mean
+• mean 
+<root=“mean”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• means 
+<root=“mean”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• mean 
+<root=“mean”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• mean 
+<root=“mean”,cat=“v”,tense=“present”,gnp=“pl”> 
+• meant 
+<root=“mean”,cat=“v”,tense=“past”> 
+• meant 
+<root=“mean”,cat=“v”,aspect=“participle”> 
+• meaning 
+<root=“mean”,cat=“v”,aspect=“progress”>
+23.	Begin
+• begin 
+<root=“begin”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• begins 
+<root=“begin”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• begin 
+<root=“begin”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• begin 
+<root=“begin”,cat=“v”,tense=“present”,gnp=“pl”> 
+• began 
+<root=“begin”,cat=“v”,tense=“past”> 
+• begun 
+<root=“begin”,cat=“v”,aspect=“participle”> 
+• beginning 
+<root=“begin”,cat=“v”,aspect=“progress”>
+24.	Show
+• show 
+<root=“show”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• shows 
+<root=“show”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• show 
+<root=“show”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• show 
+<root=“show”,cat=“v”,tense=“present”,gnp=“pl”> 
+• showed 
+<root=“show”,cat=“v”,tense=“past”> 
+• shown 
+<root=“show”,cat=“v”,aspect=“participle”> 
+• showing 
+<root=“show”,cat=“v”,aspect=“progress”>
+25.	Run
+• run 
+<root=“run”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• runs 
+<root=“run”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• run 
+<root=“run”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• run 
+<root=“run”,cat=“v”,tense=“present”,gnp=“pl”> 
+• ran 
+<root=“run”,cat=“v”,tense=“past”> 
+• run 
+<root=“run”,cat=“v”,aspect=“participle”> 
+• running 
+<root=“run”,cat=“v”,aspect=“progress”>
+26.	Stand
+• stand 
+<root=“stand”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• stands 
+<root=“stand”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• stand 
+<root=“stand”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• stand 
+<root=“stand”,cat=“v”,tense=“present”,gnp=“pl”> 
+• stood 
+<root=“stand”,cat=“v”,tense=“past”> 
+• stood 
+<root=“stand”,cat=“v”,aspect=“participle”> 
+• standing 
+<root=“stand”,cat=“v”,aspect=“progress”>
+27.	Lead
+• lead 
+<root=“lead”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• leads 
+<root=“lead”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• lead 
+<root=“lead”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• lead 
+<root=“lead”,cat=“v”,tense=“present”,gnp=“pl”> 
+• led 
+<root=“lead”,cat=“v”,tense=“past”> 
+• led 
+<root=“lead”,cat=“v”,aspect=“participle”> 
+• leading 
+<root=“lead”,cat=“v”,aspect=“progress”>
+28.	Read
+• read 
+<root=“read”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• reads 
+<root=“read”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• read 
+<root=“read”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• read 
+<root=“read”,cat=“v”,tense=“present”,gnp=“pl”> 
+• read 
+<root=“read”,cat=“v”,tense=“past”> 
+• read 
+<root=“read”,cat=“v”,aspect=“participle”> 
+• reading 
+<root=“read”,cat=“v”,aspect=“progress”>
+29.	Fall
+• fall 
+<root=“fall”,cat=“v”,tense=“present”,gnp=“1,sg”> 
+• falls 
+<root=“fall”,cat=“v”,tense=“present”,gnp=“3,sg”> 
+• fall 
+<root=“fall”,cat=“v”,tense=“present”,gnp=“2,sg”> 
+• fall 
+<root=“fall”,cat=“v”,tense=“present”,gnp=“pl”> 
+• fell 
+<root=“fall”,cat=“v”,tense=“past”>
+• fallen 
+<root=“fall”,cat=“v”,aspect=“participle”> 
+• falling 
+<root=“fall”,cat=“v”,aspect=“progress”>
+30.	Dog
+• dog
+<root=”dog”,cat=”n”,gnp=”sg”>
+• dogs
+<root="dog",cat="n",gnp="pl">
+• dog’s 
+<root="dog",cat="n",gnp="sg",aspect=”gen">
+• dogs’
+<root="dog",cat="n",gnp="pl",aspect=”gen">
+31.	Class
+• class
+<root=”class”,cat=”n”,gnp=”sg”>
+• classes
+<root=”class”,cat=”n”,gnp=”pl”>
+• class’
+<root=”class”,cat=”n”,gnp=”sg”, aspect=”gen”>
+• classes’
+<root=”class”,cat=”n”,gnp=”pl”, aspect=”gen”>
+32.	Child
+• child 
+<root="child",cat="n",gnp="sg">
+• children 
+<root="child",cat="n",gnp="pl">
+• child’s 
+<root="child",cat="n",gnp="sg",aspect="gen">
+• children’s 
+<root="child",cat="n",gnp="pl",aspect="gen">
+33.	Mouse
+• mouse 
+<root="mouse",cat="n",gnp="sg">
+• mice 
+<root="mouse",cat="n",gnp="pl">
+• mouse’s 
+<root="mouse",cat="n",gnp="sg",aspect="gen">
+• mice’s 
+<root="mouse",cat="n",gnp="pl",aspect="gen">
+34.	Man
+• man 
+<root="man",cat="n",gnp="sg">
+• men 
+<root="man",cat="n",gnp="pl">
+• man’s 
+<root="man",cat="n",gnp="sg",aspect="gen">
+• men’s 
+<root="man",cat="n",gnp="pl",aspect="gen">
+35.	Tooth
+• tooth 
+<root="tooth",cat="n",gnp="sg">
+• teeth 
+<root="tooth",cat="n",gnp="pl">
+• tooth’s 
+<root="tooth",cat="n",gnp="sg",aspect="gen">
+• teeth’s 
+<root="tooth",cat="n",gnp="pl",aspect="gen">
+36.	Person
+• person 
+<root="person",cat="n",gnp="sg">
+• people 
+<root="person",cat="n",gnp="pl">
+• person’s 
+<root="person",cat="n",gnp="sg",aspect="gen">
+• people’s 
+<root="person",cat="n",gnp="pl",aspect="gen">
+37.	Ox
+• ox 
+<root="ox",cat="n",gnp="sg">
+• oxen 
+<root="ox",cat="n",gnp="pl">
+• ox’s 
+<root="ox",cat="n",gnp="sg",aspect="gen">
+• oxen’s 
+<root="ox",cat="n",gnp="pl",aspect="gen">
+38.	Sheep
+• sheep 
+<root="sheep",cat="n",gnp="sg">
+• sheep 
+<root="sheep",cat="n",gnp="pl">
+• sheep’s 
+<root="sheep",cat="n",aspect="gen">
+German:
+1.	Sein
+• bin 
+<root="sein",cat="v",tense="present",gnp="1,sg">
+• bist 
+<root="sein",cat="v",tense="present",gnp="2,sg">
+• ist 
+<root="sein",cat="v",tense="present",gnp="3,sg">
+• wir sind
+ <root="sein",cat="v",tense="present",gnp="1,pl">
+• ihr seid
+<root="sein",cat="v",tense="present",gnp="2,pl">
+• sie/Sie sind 
+<root="sein",cat="v",tense="present",gnp="3,pl">
+• war 
+<root="sein",cat="v",tense="past">
+• gewesen 
+<root="sein",cat="v",aspect="participle">
+2.	Haben 
+• habe 
+<root="haben",cat="v",tense="present",gnp="1,sg">
+• hast 
+<root="haben",cat="v",tense="present",gnp="2,sg">
+• hat 
+<root="haben",cat="v",tense="present",gnp="3,sg">
+• haben 
+<root="haben",cat="v",tense="present",gnp="1,pl">
+• habt
+ <root="haben",cat="v",tense="present",gnp="2,pl">
+• haben 
+<root="haben",cat="v",tense="present",gnp="3,pl">
+• hatte 
+<root="haben",cat="v",tense="past">
+• gehabt 
+<root="haben",cat="v",aspect="participle">
+3.	Tun 
+• tue 
+<root="tun",cat="v",tense="present",gnp="1,sg">
+• tust 
+<root="tun",cat="v",tense="present",gnp="2,sg">
+• tut
+ <root="tun",cat="v",tense="present",gnp="3,sg">
+• tun 
+<root="tun",cat="v",tense="present",gnp="1,pl">
+• tut
+ <root="tun",cat="v",tense="present",gnp="2,pl">
+• tun 
+<root="tun",cat="v",tense="present",gnp="3,pl">
+• tat 
+<root="tun",cat="v",tense="past">
+• getan 
+<root="tun",cat="v",aspect="participle">
+4.	Gehen 
+• gehe 
+<root="gehen",cat="v",tense="present",gnp="1,sg">
+• gehst 
+<root="gehen",cat="v",tense="present",gnp="2,sg">
+• geht
+ <root="gehen",cat="v",tense="present",gnp="3,sg">
+• gehen 
+<root="gehen",cat="v",tense="present",gnp="1,pl">
+• geht 
+<root="gehen",cat="v",tense="present",gnp="2,pl">
+• gehen
+ <root="gehen",cat="v",tense="present",gnp="3,pl">
+• ging 
+<root="gehen",cat="v",tense="past">
+• gegangen 
+<root="gehen",cat="v",aspect="participle">
+5.	Sprechen 
+• spreche 
+<root="sprechen",cat="v",tense="present",gnp="1,sg">
+• sprichst 
+<root="sprechen",cat="v",tense="present",gnp="2,sg">
+• spricht 
+<root="sprechen",cat="v",tense="present",gnp="3,sg">
+• sprechen 
+<root="sprechen",cat="v",tense="present",gnp="1,pl">
+• sprecht 
+<root="sprechen",cat="v",tense="present",gnp="2,pl">
+• sprechen 
+<root="sprechen",cat="v",tense="present",gnp="3,pl">
+• sprach 
+<root="sprechen",cat="v",tense="past">
+• gesprochen 
+<root="sprechen",cat="v",aspect="participle">

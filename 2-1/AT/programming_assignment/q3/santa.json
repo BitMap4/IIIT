@@ -1,0 +1,13 @@
+{
+    "axiom": "+F",
+    "productions": {
+        "F": "F-F++F-F"
+    },
+    "angle": 72,
+    "finals": {
+        "F": "Move forward and draw",
+        "+": "Turn clockwise / Turn right",
+        "-": "Turn anti-clockwise / Turn left"
+    },
+    "starting_direction": "up"
+}

@@ -1,0 +1,69 @@
+.fonts{
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+}
+.flex{
+    display: flex;
+}
+table{
+    border: 0px;
+}
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+.first tr:nth-child(odd){
+    background-color: lightblue;
+    color: black;
+}
+.something{
+    background-color: green;
+    color: white;
+}
+hr{
+    width: 70vw;
+}
+.task7{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* extra css so it looks slightly less bad */
+:root{
+    --background-primary: #1b1b1b;
+    --background-secondary: #313131;
+    --background-tertiary: #181818;
+    --text-primary: #eee;
+    --text-dark: #949494;
+}
+body{
+    background-color: black;
+    color: var(--text-primary);
+    font-family: 'Tevruchet MS', Helvetica, sans-serif;
+    padding: 30px;
+}
+.code{
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
+    border-radius: 10px;
+    position: relative;
+}
+.language{
+    background-color: var(--background-tertiary);
+    color: var(--text-dark);
+    padding: 5px;
+    border-radius: 0px 5px 0px 5px;
+    margin-bottom: 10px;
+    position: absolute;
+    right:0px;
+    top:0px;
+}
+.something{
+    padding: 10px
+}
+.task{
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 20px;
+    background:var(--background-primary);
+    border-radius: 7px;
+}

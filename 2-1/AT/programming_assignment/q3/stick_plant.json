@@ -1,0 +1,17 @@
+{
+    "axiom": "X",
+    "productions": {
+        "F": "FF",
+        "X": "F[+X]X[-X]FX"
+    },
+    "angle": 45,
+    "finals": {
+        "F": "Move forward and draw",
+        "X": "Move forward and draw",
+        "+": "Turn anti-clockwise / Turn left",
+        "-": "Turn clockwise / Turn right",
+        "[": "Save current state (position and direction)",
+        "]": "Restore to last saved state (position and direction)"
+    },
+    "starting_direction": "up"
+}

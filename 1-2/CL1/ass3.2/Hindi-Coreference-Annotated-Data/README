@@ -1,0 +1,19 @@
+--------------------
+COREFERENCE DATASET 
+LTRC, IIIT-H
+--------------------
+
+The Coreference dataset is a layer of coreference annotation on Hindi Dependency Treebank ( http://ltrc.iiit.ac.in/treebank_H2014/ ). 
+
+------------
+DESCRIPTION
+------------
+Dataset description : http://www.lrec-conf.org/proceedings/lrec2016/pdf/847_Paper.pdf . 
+Statistics : 77.6K words, 3.5K sentences.
+---------
+CONTENTS
+---------
+Contains 275 files with only Coreference annotation in tab separated values. 
+Sentences are separated with newline.
+
+
