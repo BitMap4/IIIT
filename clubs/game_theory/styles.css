@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'CinzelVF';
+    src: url('/mnt/data/CinzelVF.ttf') format('truetype');
+}
+
+:root {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #171717;
+    --fg: #ededed;
+}
+
+body {
+    font-family: 'CinzelVF', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-primary);
+    color: var(--fg);
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: 'CinzelVF', serif;
+    color: var(--fg);
+}
+
+.divider {
+    width: 100px;
+    height: 4px;
+    background-color: var(--fg);
+    margin: 10px auto;
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-secondary);
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    color: var(--fg);
+}
+
+.event img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.event-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-details p {
+    margin: 5px 0;
+}
+
+.event-details p span {
+    font-weight: bold;
+}

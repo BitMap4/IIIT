@@ -4,5 +4,6 @@
   "highlightr-plugin",
   "quick-latex",
   "obsidian-tikzjax",
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "better-export-pdf"
 ]
