@@ -19,6 +19,3 @@
 [submodule "2-1/AT/programming_assignment/q2.old/lsystems"]
 	path = 2-1/AT/programming_assignment/q2.old/lsystems
 	url = https://github.com/arendsee/lsystems.git
-[submodule "2-1/OSN/riscv-gnu-toolchain"]
-	path = 2-1/OSN/riscv-gnu-toolchain
-	url = https://github.com/riscv-collab/riscv-gnu-toolchain
