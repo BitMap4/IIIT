@@ -19,3 +19,12 @@
 [submodule "2-1/AT/programming_assignment/q2.old/lsystems"]
 	path = 2-1/AT/programming_assignment/q2.old/lsystems
 	url = https://github.com/arendsee/lsystems.git
+[submodule "2-1/OSN/OSN-mp2"]
+    path = 2-1/OSN/OSN-mp2
+    url = https://github.com/bitmap4/OSN-mp2.git
+[submodule "2-1/OSN/yotsh"]
+	path = 2-1/OSN/yotsh
+	url = https://github.com/bitmap4/yotsh.git
+[submodule "clubs/game_theory/site"]
+	path = clubs/game_theory/site
+	url = https://github.com/gametheory-iiith/gametheory-iiith.github.io.git
